@@ -1,0 +1,191 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h3 {
+    color: gray;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.menu {
+    color: gray;
+    font-size: smaller;
+}
+
+.menu a {
+    padding-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icons i {
+    padding-left: 10px;
+    font-size: medium;
+    color: gray;
+}
+
+.top-img {
+    background-image: url("../../dist/bernie-splash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+}
+
+h2, p {
+    background-image: none;
+    background-color: transparent;
+    color: rgb(37, 37, 37);
+    
+}
+
+h2 {
+    font-size: xx-large;
+    padding-top: 100px;
+}
+
+.featured {
+    padding: 5vw;
+    position: relative;
+    text-align: center;
+}
+
+h4 {
+    padding-bottom: 40px;
+    font-weight: 500;
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    position: relative;
+    text-align: left; 
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.bernie-pic {
+    object-fit: cover;
+    width: 28vw;
+    height: 28vw;
+}
+
+.title {
+    font-size: small;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.desc {
+    font-size: smaller;
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    h3 {
+        font-size: small;
+    }
+
+    .menu {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    #menu-bars:hover {
+        cursor: pointer;
+    }
+
+    #dropdown div {
+        padding: 8px 0px 8px 15px;
+        font-size: x-small;
+        border-top: 0.5px solid lightgray;
+        color: gray;
+    }
+
+    #dropdown div:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }   
+
+    h2 {
+        font-size: x-large;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    p {
+        font-size: small;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .featured {
+        padding: 5vw;
+    }
+
+    h4 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: small;
+    }
+
+    .top-img {
+        height: 40vh;
+        width: 100vw;
+    }
+
+    h2 {
+        padding-top: 40px;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: 47.5vw 47.5vw;
+        width: 100%;
+    }
+
+    ul li {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .bernie-pic {
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .title {
+        font-size: x-small;
+        font-weight: 600;
+    }
+    .desc {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 295px) {
+    h2 {
+        padding-top: 20px;
+    }
+}
